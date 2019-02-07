@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android_linkedin_integration_demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Button for SignIn -->
+        <Button
+            android:id="@+id/linkedin_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c5199"
+            android:drawableLeft="@drawable/linkedin_logo"
+            android:drawableStart="@drawable/linkedin_logo"
+            android:gravity="center"
+            android:onClick="signInWithLinkedIn"
+            android:text="@string/sign_in_with_linkedin"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <!-- image view to show user profile image -->
+        <ImageView
+            android:id="@+id/user_profile_image_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <!-- text view to show user details -->
+        <TextView
+            android:id="@+id/user_details_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <!-- logout button only visible after successful Sign In -->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:onClick="doLogout"
+            android:text="@string/logout"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <!-- Share button only visible after successful Sign In -->
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onShareClick"
+            android:text="@string/share"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <!-- Open Profile Links buttons to open user profile into LinkedIn App only visible after successful Sign In -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/open_my_profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:onClick="openMyProfile"
+                android:layout_marginRight="5dp"
+                android:text="@string/open_my_profile"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/open_others_profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:onClick="openOthersProfile"
+                android:text="@string/open_others_profile"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

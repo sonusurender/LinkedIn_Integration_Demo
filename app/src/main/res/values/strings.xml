@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android LinkedIn Integration Demo</string>
+    <string name="sign_in_with_linkedin">Sign In with LinkedIn</string>
+    <string name="logout">Logout</string>
+    <string name="open_my_profile">Open My Profile</string>
+    <string name="open_others_profile">Open Others Profile</string>
+    <string name="share">Share</string>
+</resources>
