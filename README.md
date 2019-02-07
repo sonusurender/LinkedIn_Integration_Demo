@@ -1,4 +1,4 @@
-# Integrating LinkedIn with Android and Posting over LinkedIn
+# Integrating LinkedIn into Android and Posting over LinkedIn
 Integrating LinkedIn into Android your user will be able to SingIn very quickly. You can also post to your LinkedIn profile.
 
 ![LinkedIn Authentication](https://i2.wp.com/www.androhub.com/wp-content/uploads/2018/01/linkedin_authentication.jpg?resize=576%2C1024) | ![LinkedIn Basic Profile Information](https://i2.wp.com/www.androhub.com/wp-content/uploads/2018/01/successful_profile_fetch.jpg?resize=576%2C1024)
